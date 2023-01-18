@@ -6,6 +6,10 @@ set input-meta on
 set output-meta on
 set convert-meta off
 
+# Echo the current date in "Weekday, year-month-day" format
+echo "Today is $(date +"%a, %F %T")"
+echo ""
+
 export PS1='\[\033]0;Bash \007\]'
 # full user info
 export PS1='\[\e[01;32m\]jd3b\[\e[01;00m\]:\[\e[01;36m\]\w\[\e[00;32m\] `echo $(__git_ps1 "(%s)")`\n\[\e[01;35m\]\$\[\e[01;00m\] '
